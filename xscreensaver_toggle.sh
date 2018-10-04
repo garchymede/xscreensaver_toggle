@@ -1,7 +1,6 @@
 #! /bin/bash
 
 if [ $(xdg-screensaver status) = "disabled" ]; then
-	echo "enabling screensaver";
 	(xscreensaver -nosplash &);
 	(notify-send 'Screensaver' 'The screensaver has been enabled. Welcome back from darkness' --icon=dialog-information);
 
